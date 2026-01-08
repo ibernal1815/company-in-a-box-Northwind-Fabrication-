@@ -1,16 +1,25 @@
 # Backups And Recovery
 
-## Goals
-- Back up critical services and data
-- Make restores repeatable and clearly documented
-- Perform and record recovery tests
+## Backup target
+
+- Server: BKP01
+- Storage: Dedicated virtual disk
 
 ## Backup scope
-Document what is backed up and why.
 
-## Schedule and retention
-Document timing and retention and the reason for those choices.
+- Active Directory related data
+- File share data on FS01
+- Key configuration exports
 
-## Recovery tests
-Record restore tests with dates, outcomes, and lessons learned.
+## Schedule
 
+- Daily incremental backups
+- Weekly full backups
+
+## Recovery testing
+
+Restore tests include:
+- Restoring a deleted file
+- Recovering a configuration export
+
+Recovery steps and results are documented after each test.
