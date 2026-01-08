@@ -16,7 +16,7 @@ FS01 provides centralized file services for all departments. It hosts department
 - Operating system: Windows Server 2022 Standard
 - vCPU: 2
 - Memory: 8 GB
-- OS disk: 80 GB
+- OS disk: 60 GB
 - Data disk: 150 GB
 - Network adapter: VMnet10
 
