@@ -16,7 +16,7 @@ BKP01 serves as the centralized backup repository for critical systems and data.
 - Operating system: Ubuntu Server LTS
 - vCPU: 2
 - Memory: 4 GB
-- Disk: 150 GB
+- Disk: 100 GB
 - Network adapter: VMnet10
 
 ## Network configuration
