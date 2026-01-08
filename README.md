@@ -6,11 +6,9 @@ The environment is designed and maintained as if by a first hire IT Systems Spec
 
 Systems are built incrementally, validated as they are added, and documented with the assumption that another administrator or instructor may rely on this documentation to understand, operate, or recover the environment.
 
----
-
 ## Environment scope
 
-The lab environment supports the following core functions:
+The lab environment supports the following core functions.
 
 - Identity and access management using Active Directory
 - Group based permissions and least privilege access
@@ -22,8 +20,6 @@ The lab environment supports the following core functions:
 
 The scope is intentionally limited to remain supportable by a single administrator.
 
----
-
 ## Host system constraints
 
 All virtual machines run on a single workstation using VMware Workstation Pro. Design decisions explicitly account for these limits.
@@ -33,8 +29,6 @@ All virtual machines run on a single workstation using VMware Workstation Pro. D
 - CPU: Intel i5 14400F
 
 Services are consolidated where appropriate, and unnecessary components are avoided to prevent over allocation and instability.
-
----
 
 ## Design approach
 
@@ -48,49 +42,43 @@ This project prioritizes clarity, reliability, and recoverability over complexit
 
 Mistakes are expected and planned for through backups, logging, and clear operational notes.
 
----
-
 ## Repository structure
 
-The repository is organized into the following top level areas.
-
-- **Documentation**  
-  Design decisions, build steps, and operational procedures  
-  - Environment Overview  
-  - Network Design  
-  - Server Builds  
-  - Identity And Access  
-  - File Services  
-  - Logging And Monitoring  
-  - Backups And Recovery  
-  - Change Log  
-
-- **Scripts**  
-  PowerShell automation used in daily operations  
-  - Onboarding  
-  - Offboarding  
-  - Shared Functions  
-
-- **Configs**  
-  Exported and reference configurations  
-  - GPO Backups  
-  - DHCP Exports  
-
-- **Diagrams**  
-  Network and system diagrams
-
-- **Evidence**  
-  Screenshots and results from validation and recovery testing
-
----
+```text
+.
+├── Documentation
+│   ├── Environment Overview
+│   ├── Network Design
+│   ├── Server Builds
+│   ├── Identity And Access
+│   ├── File Services
+│   ├── Logging And Monitoring
+│   ├── Backups And Recovery
+│   └── Change Log
+│
+├── Scripts
+│   ├── Onboarding
+│   ├── Offboarding
+│   └── Shared Functions
+│
+├── Configs
+│   ├── GPO Backups
+│   └── DHCP Exports
+│
+├── Diagrams
+│
+├── Evidence
+│   ├── Screenshots
+│   └── Test Results
+│
+└── README.md
+```
 
 ## Documentation style
 
 All documentation is written in a student professional tone. The intent is to be clear, direct, and usable by another administrator without relying on assumed context or institutional knowledge.
 
 Exaggerated claims, marketing language, and idealized designs are intentionally avoided.
-
----
 
 ## Intended audience
 
@@ -101,8 +89,6 @@ This repository is written for:
 - Administrators looking for a realistic small environment reference
 
 The documentation assumes basic familiarity with Windows Server, Active Directory, and PowerShell, while avoiding unnecessary jargon where possible.
-
----
 
 ## Project status
 
