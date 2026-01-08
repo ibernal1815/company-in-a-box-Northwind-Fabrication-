@@ -1,13 +1,20 @@
 # Logging And Monitoring
 
-## Goals
-- Centralize key event logs for servers and a sample of endpoints
-- Keep the solution lightweight and supportable
-- Make it easy to validate that logs are arriving
+## Logging server
 
-## Sources
-Document what logs are collected and from which systems.
+- Server: LOG01
+- Purpose: Centralized log collection
+
+## Log sources
+
+- Domain controller security and system logs
+- File server system logs
+- Selected client security logs
 
 ## Retention
-Document how long logs are kept and why that duration was chosen.
 
+Logs are retained for approximately 30 days, balancing visibility with storage constraints.
+
+## Validation
+
+Log ingestion is periodically verified by generating test events and confirming receipt on LOG01.
